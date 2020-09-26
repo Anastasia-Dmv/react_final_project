@@ -1,0 +1,87 @@
+.habbitTemplateWrapper {
+  position: relative;
+  width: 784px;
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #4f4f4f;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habitTemplateList {
+  height: 340px;
+  /* overflow-y: scroll; */
+}
+
+.habitTemplateTitle {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  color: #4f4f4f;
+}
+
+.habitTemplateItemLink {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #43d190;
+  text-decoration: none;
+  border: 0;
+  background-color: #e9faf7;
+  cursor: pointer;
+  width: 425px;
+}
+
+.habitTemplateItemLink:hover {
+  background-color: #cbf6e3;
+  color: #4f4f4f;
+}
+
+.habitTemplateItem {
+  background-color: #e9faf7;
+  height: 44px;
+  width: 425px;
+  text-align: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.habitTemplateItem:last-child {
+  margin-bottom: 0px;
+}
+
+.habitTemplateItem:hover {
+  background-color: #cbf6e3;
+  color: #ffffff;
+}
+
+.btnTransparentWhiteBorder {
+  width: 220px;
+  height: 44px;
+  background-color: transparent;
+  border: 2px solid #43d190;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #43d190;
+  cursor: pointer;
+}
+.btnTransparentWhiteBorder:hover,
+.btnTransparentWhiteBorder:focus {
+  background-color: #43d190;
+  color: #ffffff;
+  outline: 0;
+}
+
+.closeBtnWrapper {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}

@@ -1,0 +1,301 @@
+@value colors: '../../css/vars.module.css';
+@value main_green, main_blue, main_pink, main_gradient, orange_gradient, pink_gradient, violet_gradient, black_font, grey_font from colors;
+
+.sectionTitle {
+  font-size: 26px;
+  line-height: 31px;
+  color: black_font;
+  margin-bottom: 30px;
+}
+
+.cardsButtons {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.buttonAdd {
+  margin-right: 15px;
+}
+
+.buttonPay {
+  background: main_green;
+  color: #ffffff;
+}
+
+.buttonPay:hover,
+.buttonPay:focus {
+  background: #ffffff;
+  color: main_green;
+}
+
+.supportContainer {
+  display: flex;
+}
+
+.supportPic {
+  width: 238px;
+  height: 150px;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 0px 10px 16px rgba(254, 96, 131, 0.04);
+  background: main_green;
+  background-image: url(../../assests/images/Card/support-pic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.supportInfo {
+  width: 356px;
+  height: 150px;
+  background: #ffffff;
+  box-shadow: 0px 10px 16px rgba(254, 96, 131, 0.04);
+  border-radius: 0px 10px 10px 0px;
+  padding: 20px 30px;
+}
+
+.supportInfoTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: black_font;
+  margin-bottom: 10px;
+}
+
+.supportInfoEmail {
+  font-size: 14px;
+  line-height: 17px;
+
+  color: black_font;
+  margin-bottom: 12px;
+}
+
+.supportInfoTelegram {
+  width: 30px;
+  height: 30px;
+  background: main_green;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalForm {
+  max-width: 90%;
+  width: 785px;
+  padding: 60px;
+  font-family: Rubik;
+  background: #ffffff;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+.sectionHeader {
+  /* margin-bottom: 40px; */
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: black_font;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.error {
+  color: red;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.label {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label:last-of-type {
+  margin-bottom: 80px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFields {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.input {
+  width: 220px;
+  height: 44px;
+  padding: 20px;
+  color: black_font;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.select {
+  width: 220px;
+  height: 44px;
+  padding: 0 10px;
+  color: black_font;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.input:focus,
+.select:focus {
+  border: 1px solid black_font;
+  outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+::placeholder {
+  font-size: 18px;
+  color: grey_font;
+}
+
+.button {
+  width: 220px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  background: main_green;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: main_green;
+  border: 2px solid main_green;
+  background: transparent;
+  outline: 0;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cardFirst {
+  position: relative;
+  margin-right: 30px;
+  width: 344px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  /* background: #655de6; */
+  box-shadow: 0px 10px 16px rgba(101, 93, 230, 0.04);
+}
+
+.cardName {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cardNumber {
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.39em;
+  margin-bottom: 60px;
+}
+
+.cardExpireDate {
+  font-size: 14px;
+}
+
+.cardDeleteButton {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cardDeleteButton:hover,
+.cardDeleteButton:focus {
+  box-shadow: 0 0 14px main_pink;
+}
+
+.trashIcon {
+  width: 14px;
+  height: 14px;
+  fill: main_blue;
+}
+
+.trashIcon:hover,
+.trashIcon:focus {
+  fill: main_pink;
+}
+
+.listCards {
+  position: relative;
+  width: 275px;
+  height: 160px;
+}
+
+.card {
+  position: absolute;
+  padding: 20px;
+  /* width: 100%;
+  height: 100%; */
+  color: #fff;
+  border-radius: 10px;
+  /* background: #b469fa; */
+  box-shadow: 0px 10px 16px rgba(180, 105, 250, 0.1);
+}
+
+.card .cardDeleteButton {
+  width: 16px;
+  height: 16px;
+}
+
+.card .cardName {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.card .cardNumber {
+  font-size: 12px;
+  margin-bottom: 45px;
+}
+
+.card .cardExpireDate {
+  font-size: 12px;
+}
+
+.card .cardDeleteButton {
+  right: 16px;
+  bottom: 16px;
+}

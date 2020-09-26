@@ -1,0 +1,251 @@
+@value style: '../../css/vars.module.css';
+@value main_green, main_gradient, orange_gradient, pink_gradient, violet_gradient from style;
+
+body {
+  background-color: #f6f6f6;
+}
+.container {
+  width: 842px;
+  height: 100vh;
+}
+
+.wrapperHeader {
+  border-bottom: 1px solid #d5e1dc;
+  background-color: #ffffff;
+  height: 110px;
+  padding: 40px 62px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  color: #4f4f4f;
+}
+
+/* -------- Main -------- */
+.wrapperMain {
+  height: 100vh;
+  padding: 60px 62px;
+}
+.wrapperForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleInfo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 31px;
+  color: #4f4f4f;
+  margin-bottom: 30px;
+}
+
+.wrapperFirstColumn {
+  width: 470px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.wrapperFirstColumn:last-child {
+  margin-bottom: 0;
+}
+
+.wrapperSecondColumn {
+  width: 220px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 470px;
+  height: 44px;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.titleInput {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4f4f4f;
+  width: 125px;
+}
+
+.input {
+  width: 345px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 44px;
+  color: #4f4f4f;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 0 20px;
+  outline: none;
+}
+
+/* ---- validation ----- */
+.inputInvalid {
+  border: 1px solid #fe6083;
+}
+.inputValid {
+  border: 1px solid main_green;
+}
+.errorMessage {
+  position: absolute;
+  top: 46px;
+  left: 130px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #fe6083;
+}
+/* ------------------------- */
+.eyeImage {
+  position: absolute;
+  right: 20px;
+}
+
+.wrapperSecondColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 238px;
+  margin-bottom: 20px;
+}
+
+.avatarWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.avatarWrapper:hover,
+.avatarWrapper:focus {
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 108px;
+  height: 108px;
+  cursor: pointer;
+}
+
+.editAvatar {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* ------- subscription ------- */
+.subscription {
+  min-width: 52px;
+  height: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 5px;
+  padding: 2px 6px;
+  margin-bottom: 15px;
+}
+.subscriptionName {
+  display: flex;
+  justify-content: center;
+}
+
+.subscriptionFree {
+  background-color: #e0e0e0;
+}
+.subscriptionNoob {
+  background-color: main_green;
+}
+.subscriptionBasic {
+  background: main_gradient;
+}
+.subscriptionStandart {
+  background: orange_gradient;
+}
+.subscriptionPremium {
+  background: pink_gradient;
+}
+.subscriptionUltra {
+  background: violet_gradient;
+}
+
+.linkChenlistSaveChanges {
+  /* margin: 0 auto; */
+}
+
+/* ----------------- */
+
+.btnSaveChange {
+  width: 220px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  background: #43d190;
+  border: 2px solid #43d190;
+  border-radius: 5px;
+  color: #ffffff;
+  line-height: 44px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btnSaveChange:hover,
+.btnSaveChange:focus {
+  background: rgba(67, 209, 144, 0.7);
+  border: 2px solid rgba(67, 209, 144, 0.7);
+}
+
+.button,
+.buttonChangePassword {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  background: #ffffff;
+  border: 2px solid main_green;
+  border-radius: 5px;
+  color: main_green;
+  line-height: 42px;
+  width: 220px;
+  cursor: pointer;
+}
+.buttonChangePassword {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* .buttonChangePassword:hover,
+.buttonChangePassword:focus {
+  background: rgba(67, 209, 144, 0.7);
+  border: 2px solid rgba(67, 209, 144, 0.7);
+  color: #ffffff;
+} */
